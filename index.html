@@ -7,6 +7,15 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
+    <!-- Loading screen (will be hidden once the game is ready) -->
+    <div id="loadingScreen">
+        <div id="loadingInner">
+            <img id="creatorIcon" src="assets/creator.png" alt="Creator Icon" />
+            <div class="creator-text">Creator: あじふらい</div>
+            <div id="loadingBar"><div id="loadingBarFill"></div></div>
+        </div>
+    </div>
+
     <canvas id="gameCanvas"></canvas>
     
     <div id="toastContainer"></div>
@@ -146,6 +155,7 @@
         </div>
     </div>
 
+    <script src="loader.js"></script>
     <script src="version.js"></script>
     <script src="save.js"></script>
     <script src="level.js"></script>
